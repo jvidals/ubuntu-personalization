@@ -9,3 +9,9 @@ alias vims='sudo vim'
 
 alias plex_download='ssh plex_download'
 alias argus='ssh argus'
+
+#------------------------------------////
+# Spelling corrections:
+#-----------------------------------////
+
+alias claer='clear'
