@@ -7,7 +7,13 @@ case $- in
 		*) return;;
 esac
 
-export PS1='\[\e[1;33m\]\u@\h \w ->\n\[\e[1;36m\] \$\[\e[m\] '
+if (( $UID == 0 ))
+then
+  export PS1='\[\e[0;31m\]\u@\h \w ->\n\[\e[1;37m\] \$\[\e[m\] '
+else
+  export PS1='\[\e[1;33m\]\u@\h \w ->\n\[\e[1;36m\] \$\[\e[m\] '
+fi
+
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 # enable color support of ls and also add handy aliases
