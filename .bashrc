@@ -14,6 +14,8 @@ else
   export PS1='\[\e[1;33m\]\u@\h \w ->\n\[\e[1;36m\] \$\[\e[m\] '
 fi
 
+export ANSIBLE_NOCOWS=1
+export ANSIBLE_HOST_KEY_CHECKING=False
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 # enable color support of ls and also add handy aliases
@@ -40,6 +42,11 @@ if [ -f ~/.bash_aliases ]; then
 	    . ~/.bash_aliases
 fi
 
+if [ -d "$HOME/adb-fastboot" ] ; then
+  export PATH="$HOME/adb-fastboot/platform-tools:$PATH"
+fi
+
+eval $(thefuck --alias fuck)
 
 #------------------------------------------////
 # Colors:
