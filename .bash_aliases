@@ -3,7 +3,8 @@ alias reload='source ~/.bashrc'
 alias ps='ps auxf'
 alias svim='sudo vim'
 alias killhipchat='kill $(ps waux | grep -P "/opt/HipChat4/bin/HipChat4$" |  awk "{print $2}")'
-alias vmransible='ansible-playbook -i inventory -K --ask-pass site.yml'
+alias vmransible='ansible-playbook -i inventory -K --ask-pass -e 'host_key_checking=False' site.yml'
+alias vmrapg='apg -MNCL -a1 -m20 -x41 | head -1'
 
 #-------------------------------------////
 # SSH Aliases:

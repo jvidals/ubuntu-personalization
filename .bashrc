@@ -16,6 +16,7 @@ fi
 
 export ANSIBLE_NOCOWS=1
 export ANSIBLE_HOST_KEY_CHECKING=False
+
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 # enable color support of ls and also add handy aliases
@@ -47,7 +48,6 @@ if [ -d "$HOME/adb-fastboot" ] ; then
 fi
 
 eval $(thefuck --alias fuck)
-
 #------------------------------------------////
 # Colors:
 #------------------------------------------////
@@ -116,8 +116,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=4000
+HISTFILESIZE=4000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
