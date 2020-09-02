@@ -7,6 +7,12 @@ alias vmransible='ansible-playbook -i inventory -K --ask-pass -e 'host_key_check
 alias vmrapg='apg -MNCL -a1 -m20 -x41 | head -1'
 
 #-------------------------------------////
+# gcloud Aliases:
+#-------------------------------------////
+alias configurations='gcloud config configurations'
+alias instances='gcloud compute instances'
+
+#-------------------------------------////
 # SSH Aliases:
 #-------------------------------------////
 
