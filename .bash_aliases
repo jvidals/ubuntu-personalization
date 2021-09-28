@@ -20,6 +20,7 @@ alias andromeda='ssh -i ~/.ssh/id_rsa_vmracks jvidals@andromeda'
 alias plex_download='ssh plex_download'
 alias argus='ssh argus'
 alias vmrssh='ssh -i ~/.ssh/id_rsa_vmracks'
+alias vmrscp='scp -i ~/.ssh/id_rsa_vmracks'
 
 #------------------------------------////
 # Spelling corrections:
